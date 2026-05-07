@@ -261,7 +261,7 @@ def generate_batch(count, samples, feature_dim, device=None, **kwargs):
         batch_SevX.append(sevX)
         batch_SevXa.append(sevXa)
 
-    return torch.stack(batch_X), torch.stack(batch_Xa) torch.stack(batch_SevX), torch.stack(batch_SevXa)
+    return torch.stack(batch_X), torch.stack(batch_Xa), torch.stack(batch_SevX), torch.stack(batch_SevXa)
     
 if True and __name__=="__main__":
     device="cpu"
